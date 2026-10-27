@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container-checkout">
+        <h1>Resumo do seu Pedido</h1>
+        
+        <div id="lista-produtos-checkout"></div>
+        <h2 id="total-checkout">Total: 0,00 €</h2>
+
+        <hr>
+
+        <h2>Preencha os seus dados para entrega</h2>
+        <!-- Substitua O_SEU_EMAIL_AQUI@gmail.com pelo seu e-mail real -->
+        <form id="form-compra" action="https://formsubmit.co/O_SEU_EMAIL_AQUI@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Substitua pelo link real da sua loja para redirecionar o cliente após o envio -->
+            <input type="hidden" name="_next" value="https://o-seu-site.com/index.html">
+
+            <input type="text" name="Nome" id="nome" placeholder="Nome Completo" required>
+            <input type="text" name="Endereco" id="endereco" placeholder="Endereço de Entrega" required>
+            <input type="text" name="Telefone" id="telefone" placeholder="Telefone" required>
+            
+            <!-- Campo oculto que guardará os produtos para enviar no e-mail -->
+            <input type="hidden" name="Pedido" id="resumo-pedido">
+            
+            <button type="submit" class="btn-confirmar">Confirmar Pedido</button>
+        </form>
+    </div>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

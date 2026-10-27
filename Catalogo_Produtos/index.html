@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cantinho do Topete: doação de calopsitas e loja com ração, alimentos, casinhas e ninhos.">
+    <meta name="theme-color" content="#2b2a28">
+    <title>Cantinho do Topete</title>
+
+    <link rel="icon" href="imagem/logo.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-links" data-bs-root-margin="0px 0px -45%" tabindex="0">
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg sticky-top site-nav" aria-label="Navegação principal">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="imagem/logo.webp" alt="Cantinho do Topete" width="105" height="52">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center" id="nav-links">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#adocao">Adoção</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#loja">Loja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <a class="btn btn-topete ms-lg-3 mt-2 mt-lg-0" href="#adocao">Quero adotar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="conteudo">
+
+        <!-- Destaques -->
+        <section id="inicio" aria-label="Destaques">
+            <div id="hero" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#hero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#hero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active hero-slide">
+                        <img class="hero-img pos-topete" src="imagem/banner_topete.webp" width="1920" height="921"
+                            fetchpriority="high"
+                            alt="Duas calopsitas cinzentas em um poleiro de madeira, em um ambiente claro com plantas">
+                        <div class="hero-caption">
+                            <div class="container">
+                                <div class="hero-card">
+                                    <h1>Calopsitas à espera de um lar</h1>
+                                    <p><strong>Seja bem-vindo ao Cantinho do Topete!</strong> Aqui o amor pelas
+                                        calopsitas ganha asas. Conheça as aves disponíveis para adoção e escolha tudo
+                                        o que elas precisam.</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <a class="btn btn-topete" href="#adocao">Ver calopsitas</a>
+                                        <a class="btn btn-topete-outline" href="#loja">Ver a loja</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item hero-slide hero-slide--end">
+                        <img class="hero-img pos-brinq" src="imagem/banner_brinquedos.webp" width="1920" height="822"
+                            loading="lazy"
+                            alt="Calopsitas amarelas brincando em um balanço, um ninho de fibra e cordas coloridas">
+                        <div class="hero-caption">
+                            <div class="container">
+                                <div class="hero-card">
+                                    <h2>Casinhas, ninhos e diversão</h2>
+                                    <p>Xô, tédio! Acessórios seguros para a sua calopsita gastar energia, afiar o bico
+                                        e se divertir.</p>
+                                    <a class="btn btn-topete" href="#loja" data-filtro="Casinhas">Ver casinhas e
+                                        ninhos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item hero-slide">
+                        <img class="hero-img pos-alim" src="imagem/banner_alimentacao.webp" width="1920" height="822"
+                            loading="lazy"
+                            alt="Duas calopsitas, uma amarela e uma cinza, ao lado de uma tigela de sementes, legumes e frutas">
+                        <div class="hero-caption">
+                            <div class="container">
+                                <div class="hero-card">
+                                    <h2>Alimentação saudável</h2>
+                                    <p>A melhor nutrição para a sua ave: rações extrusadas e sementes selecionadas para
+                                        manter o topete forte e cheio de energia.</p>
+                                    <a class="btn btn-topete" href="#loja" data-filtro="Ração">Ver rações</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Como adotar -->
+        <section id="como-adotar" class="section bg-white border-bottom" aria-labelledby="t-como">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4">
+                        <h2 id="t-como" class="section-title">Adotar é simples</h2>
+                        <p class="section-lead">As calopsitas são doadas, sem custo. Você só precisa estar pronto para
+                            cuidar de uma nova companheira.</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <ol class="steps row row-cols-1 row-cols-md-3 g-4 list-unstyled mb-0">
+                            <li class="col">
+                                <span class="step-num" aria-hidden="true">1</span>
+                                <h3>Escolha sua calopsita</h3>
+                                <p>Veja as aves disponíveis e leia a história de cada uma.</p>
+                            </li>
+                            <li class="col">
+                                <span class="step-num" aria-hidden="true">2</span>
+                                <h3>Converse com a gente</h3>
+                                <p>Clique em "Quero adotar" para falar pelo WhatsApp e tirar suas dúvidas.</p>
+                            </li>
+                            <li class="col">
+                                <span class="step-num" aria-hidden="true">3</span>
+                                <h3>Combine a entrega</h3>
+                                <p>Definimos juntos como e quando a calopsita vai para a sua casa.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adoção -->
+        <section id="adocao" class="section" aria-labelledby="t-adocao">
+            <div class="container">
+                <h2 id="t-adocao" class="section-title">Calopsitas para adoção</h2>
+                <p class="section-lead mb-5">Aves exóticas e domésticas, com criação legalizada no Brasil. Cada uma tem
+                    cor, jeito e personalidade próprios.</p>
+
+                <div id="lista-calopsitas" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                    <noscript>
+                        <div class="col-12"><p>Ative o JavaScript para ver as calopsitas disponíveis.</p></div>
+                    </noscript>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loja -->
+        <section id="loja" class="section bg-white border-top" aria-labelledby="t-loja">
+            <div class="container">
+                <h2 id="t-loja" class="section-title">Loja do Topete</h2>
+                <p class="section-lead mb-4">Ração, alimentos, casinhas e ninhos para o conforto da sua calopsita. O
+                    pedido é feito pelo WhatsApp.</p>
+
+                <div id="filtros" class="d-flex flex-wrap gap-2 mb-2" role="group" aria-label="Filtrar produtos por categoria"></div>
+                <p id="contagem" class="small text-secondary mb-4" aria-live="polite"></p>
+
+                <div id="lista-produtos" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                    <noscript>
+                        <div class="col-12"><p>Ative o JavaScript para ver os produtos.</p></div>
+                    </noscript>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="section band-dark" aria-labelledby="t-contato">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <h2 id="t-contato" class="section-title">Fale com o Cantinho do Topete</h2>
+                        <p class="section-lead">Para adotar uma calopsita ou fazer um pedido da loja, é só chamar a
+                            gente no WhatsApp.</p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end">
+                        <a id="btn-contato" class="btn btn-sun btn-lg" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="band-dark footer">
+        <div class="container d-flex flex-wrap justify-content-between gap-2 py-3">
+            <p class="mb-0">&copy; <span id="ano">2026</span> Cantinho do Topete. Todos os direitos reservados.</p>
+            <a href="#inicio">Voltar ao topo</a>
+        </div>
+    </footer>
+
+    <!-- Detalhes da calopsita -->
+    <div class="modal fade" id="modalCalopsita" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <h2 class="modal-title" id="modalTitulo"></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5">
+                            <img id="modalImg" class="img-fluid w-100 modal-photo" src="" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <p id="modalVariedade" class="bird-variety"></p>
+                            <div id="modalTexto"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-topete-outline" data-bs-dismiss="modal">Fechar</button>
+                    <a id="modalAdotar" class="btn btn-topete" href="#" target="_blank" rel="noopener">Quero adotar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dados.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
